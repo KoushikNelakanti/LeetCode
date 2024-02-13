@@ -1,0 +1,2 @@
+# LeetCode
+A Learning Platform
