@@ -8,9 +8,7 @@ public:
             if(currTime>customers[i][0]){
                 waitingTime+=abs(currTime-customers[i][0]);
             }
-            else{
                 currTime = max(currTime,customers[i][0]);
-            }
                 currTime+=customers[i][1];
                 waitingTime+=customers[i][1];
         }
