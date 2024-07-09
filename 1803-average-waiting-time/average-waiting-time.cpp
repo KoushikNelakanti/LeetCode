@@ -5,7 +5,6 @@ public:
         int currTime = a+b;
         double waitingTime = b;
         for(int i = 1;i < customers.size();i++){
-            cout<<waitingTime<<" "<<currTime<<endl;
             if(currTime>customers[i][0]){
                 waitingTime+=abs(currTime-customers[i][0]);
             }
@@ -15,7 +14,6 @@ public:
                 currTime+=customers[i][1];
                 waitingTime+=customers[i][1];
         }
-        cout<<waitingTime<<endl;
         double average = waitingTime/customers.size();
         return average;
     }
