@@ -13,7 +13,6 @@ public:
                 st.pop();
             }
             st.pop();
-            cout<<temp<<endl;
             for(int j = 0;j < temp.size();j++) st.push(temp[j]);
             }
         }
