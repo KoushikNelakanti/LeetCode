@@ -8,10 +8,7 @@ public:
     }
     int rob(vector<int>& nums) {
         unordered_map<int,int> mp;
-       int a = getMax(nums,0,mp);
-       int b = getMax(nums,1,mp);
-       cout<<a<<endl;
-       cout<<b<<endl;
-       return max(a,b);
+       
+       return max(getMax(nums,0,mp),getMax(nums,1,mp));
     }
 };
