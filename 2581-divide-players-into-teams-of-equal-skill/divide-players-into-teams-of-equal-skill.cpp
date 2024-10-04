@@ -6,7 +6,6 @@ public:
         long long total = 0;
         int i = 0,j = skill.size()-1;
         while(i<j){
-            cout<<i<<" "<<j<<endl;
             if(value!=(skill[i]+skill[j])) return -1; 
             total+=skill[i]*skill[j];
             i++;
