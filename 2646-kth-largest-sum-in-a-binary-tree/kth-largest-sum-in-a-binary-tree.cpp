@@ -24,15 +24,12 @@ public:
                     if(q.front()->left) q.push(q.front()->left);
                     if(q.front()->right) q.push(q.front()->right);
                     sum+=q.front()->val;
-                cout<<q.front()->val<<" ";
                     q.pop();
                 }
             }
-            cout<<endl;
             if(q.front()==NULL){
                 q.pop();
                 res.push_back(sum);
-                cout<<"SUM"<<sum<<"Size"<<res.size()<<endl;
                 sum = 0;
             }
         }
