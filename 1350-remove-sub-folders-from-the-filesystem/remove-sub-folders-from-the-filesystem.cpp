@@ -11,7 +11,7 @@ public:
             string res = "";
             for(int j = 0;j < folder[i].size();j++){
                 res+=folder[i][j];
-                if(res[res.size()]!='/'){
+                if(res[res.size()-1]!='/'){
                     if(mp[res]){
                         if(j+1==folder[i].size() || folder[i][j+1]=='/') break;
                     }
