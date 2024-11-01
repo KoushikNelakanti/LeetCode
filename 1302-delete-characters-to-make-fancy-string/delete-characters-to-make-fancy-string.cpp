@@ -2,28 +2,20 @@ class Solution {
 public:
 
     string makeFancyString(string s) {
-        stack<char> st;
+        string res = "";
+        char ch = ' ';
         int count = 0;
         for(int i = 0;i < s.size();i++){
-            if(st.size() && st.top()==s[i]){
-                count++;
-                st.push(s[i]);
-                if(count==3){
-                    st.pop();
-                    count--;
-                }
+            if(s[i]!=ch){
+                ch = s[i];
+                count = 1;
+                res+=s[i];
             }
             else{
-                st.push(s[i]);
-                count = 1;
+                count++;
+                if(count<3) res+=s[i];
             }
         }
-        string res = "";
-        while(st.size()){
-            res+=st.top();
-            st.pop();
-        }
-        reverse(res.begin(),res.end());
         return res;
     }
 };
