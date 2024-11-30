@@ -4,7 +4,6 @@ vector<int> v;
 unordered_map<int,int> mp;
     int getMinNum(int n){
     if(n==0) return 0;
-    else if(n<0) return 1e9;
     if(mp[n]) return mp[n];
     mp[n]=1e9;
     for(int i = v.size()-1;i>=0;i--){
