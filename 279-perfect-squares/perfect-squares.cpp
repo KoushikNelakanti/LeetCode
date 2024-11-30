@@ -8,7 +8,7 @@ unordered_map<int,int> mp;
     if(mp[n]) return mp[n];
     mp[n]=1e9;
     for(int i = v.size()-1;i>=0;i--){
-        mp[n] = min(mp[n],1+getMinNum(n-v[i]));
+        if(v[i]<=n) mp[n] = min(mp[n],1+getMinNum(n-v[i]));
     }
     return mp[n];
 }
