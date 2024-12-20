@@ -43,7 +43,6 @@ public:
     TreeNode* reverseOddLevels(TreeNode* root) {
         vector<int> order;
         levelOrder(root,order);
-        cout<<order.size()<<endl;
         int prev = -1,next = -1,count = 0;
         for(int i = 0;i < order.size();i++){
             if(order[i]==-1){
@@ -54,9 +53,6 @@ public:
                prev = i;
                 count++;
             }
-        }
-        for(int i = 0;i < order.size();i++){
-            cout<<order[i]<<" ";
         }
         flag = 1;
         levelOrder(root,order);
