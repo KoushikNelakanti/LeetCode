@@ -8,7 +8,6 @@ bool isPalindrome(char* s) {
        if(j>i && !ischar(s[j])) j--;
        if(j>i && ischar(s[i]) && ischar(s[j])){
         char a = tolower(s[i]),b = tolower(s[j]);
-        printf("%c %c\n",a,b);
         if(a!=b) return false;
         i++;
         j--;
