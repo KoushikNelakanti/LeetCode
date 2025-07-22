@@ -11,7 +11,7 @@ public:
         return true;
     }
     bool isBoxValid(int start1,int end1,int start2,int end2,vector<vector<char>> board){
-        cout<<start1<<" "<<end1<<" "<<start2<<" "<<end2<<endl;
+        // cout<<start1<<" "<<end1<<" "<<start2<<" "<<end2<<endl;
         bool result;
         vector<int> freq(10,0);
         for(int i = start1;i<end1;i++){
@@ -63,9 +63,9 @@ for(int i = 0;i < board.size();i++){
 
     }
     bool isValidSudoku(vector<vector<char>>& board) {
-        cout<<isRowValid(board)<<endl;
-        cout<<isColValid(board)<<endl;
-        cout<<isBoxesValid(board)<<endl;
+        // cout<<isRowValid(board)<<endl;
+        // cout<<isColValid(board)<<endl;
+        // cout<<isBoxesValid(board)<<endl;
         return isRowValid(board)&isColValid(board)&isBoxesValid(board);
     }
 };
