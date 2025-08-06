@@ -40,9 +40,7 @@ public:
                 if(!mp[i][j]) len = getPathLength(i,j,matrix,mp);
                 else len = mp[i][j];
                 maxLen = max(len,maxLen);
-                cout<<mp[i][j]<<" ";
             }
-            cout<<endl;
         }
         return maxLen;
     }
